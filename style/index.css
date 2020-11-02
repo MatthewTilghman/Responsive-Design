@@ -1,0 +1,376 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(37, 40, 43);
+}
+html{
+    font-size: 62.5%;
+}
+a, button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+}
+header{
+    height:77vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 10%;
+    align-items:center;
+    background-image: url('../images/washingdc.jpg');
+    background-size:cover;
+    background-position: top;
+    border-radius: 5px;
+    border: solid 2px rgba(245, 245, 245, 0.308);
+    text-align:center;
+}
+.headercontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.myname{
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.8rem;
+    margin: 2% 0 0 1.5%;
+    color: whitesmoke;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 2%;
+    margin: 2.5% 1.5% 0 60%;
+}
+.navlinks a{
+    color: whitesmoke;
+    background: rgba(8, 123, 185, 0.452);
+    padding: 5px 15px;
+    margin: 0 2.5% 5% 0;
+    border-radius: 7.5px;
+    border: 1px solid lightslategray;
+    transition: .25s;
+}
+.navlinks a:hover {
+    color:black;
+    background-color: lightslategray;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+}
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 9rem;
+    text-align: center;
+    color: rgba(227, 239, 250, 0.623);
+    background-color: rgba(119, 136, 153, 0);
+}
+.cta{
+    background-color: rgba(119, 136, 153, 0);
+}
+.Projects{
+    width: 25%;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 5%;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.Projects:hover{
+    color:lightslategray;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.box{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 5% 2% 0 2%;
+    border-radius: 20px;
+}
+.footernav {
+    background-color: rgba(8, 123, 185, 0.315);
+    width: 100%;
+    text-align: center;
+    padding: 2.5% 0 2.5% 0;
+}
+.Contactme{
+    border-radius: 10px;
+    width: 10.5%;
+    height: 2.5em;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.Contactme:hover{
+    color:lightslategray;
+}
+p{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin: 5%;
+    color: lightslategray;
+}
+@media(max-width:800px){
+    *{
+        max-width: 100%;
+        box-sizing: border-box;
+        background-color: rgb(37, 40, 43);
+    }
+    a, button {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        text-decoration: none;
+    }
+    header{
+        width: auto;
+        height:50vh;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 10%;
+        align-items:center;
+        background-image: url('../images/washingdc.jpg');
+        background-size:cover;
+        background-position: top;
+        border-radius: 5px;
+        text-align:center;
+    }
+    .headercontainer{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .myname{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5rem;
+        margin-left: 30%;
+    }
+    .navlinks {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-bottom: 2%;
+        margin: 2.5% 1.5% 0 60%;
+    }
+    .navlinks a{
+        padding: 5px 5px;
+        margin: 0 2.5% 5% 0;
+    }
+    h1{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 6rem;
+        text-align: center;
+    }
+    .Projects{
+        width: 25%;
+        height: 35px;
+        border-radius: 10px;
+        margin-top: 5%;
+        cursor: pointer;
+        transition: .25s;
+    }
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box{
+        width: 40%;
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 5% 5% 0 5%;
+        border-radius: 20px;
+    }
+    .footernav {
+        width: 100%;
+        text-align: center;
+        padding: 2.5% 0 2.5% 0;
+    }
+    .Contactme{
+        border-radius: 10px;
+        width: 10.5%;
+        height: 2.5em;
+        cursor: pointer;
+    }
+    p{
+        font-size: 15px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        margin: 5%;
+    }
+}
+@media(max-width:500px){
+    *{
+        max-width: 100%;
+        box-sizing: border-box;
+        background-color: rgb(37, 40, 43);
+    }
+    a, button {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 8px;
+        text-decoration: none;
+    }
+    header{
+        width: auto;
+        height:40vh;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 10%;
+        align-items:center;
+        background-image: url('../images/washingdc.jpg');
+        background-size:cover;
+        background-position: top;
+        border-radius: 5px;
+        text-align:center;
+    }
+    .headercontainer{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .myname{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        margin-left: 30%;
+    }
+    .navlinks {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-bottom: 2%;
+        margin: 2.5% 1.5% 0 60%;
+    }
+    .navlinks a{
+        padding: 5px 5px;
+        margin: 0 2.5% 5% 0;
+    }
+    h1{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .Projects{
+        width: 35%;
+        height: 25px;
+        border-radius: 10px;
+        margin-top: 5%;
+        cursor: pointer;
+        transition: .25s;
+    }
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box{
+        width: 40%;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 5% 5% 0 5%;
+        border-radius: 20px;
+    }
+    .footernav {
+        width: 100%;
+        text-align: center;
+        padding: 2.5% 0 2.5% 0;
+    }
+    .Contactme{
+        border-radius: 10px;
+        width: 13.5%;
+        height: 2.5em;
+        cursor: pointer;
+    }
+    p{
+        font-size: 12px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        margin: 5%;
+    }
+}
